@@ -1,6 +1,6 @@
 package recursion;
 
-public class ArrayElementSearch {
+public class LinearSearch {
     static boolean isFound(int[] arr, int index, int size, int key) {
         // base case
         if (size == 0) return false;
@@ -10,6 +10,6 @@ public class ArrayElementSearch {
         return isFound(arr, index+1, size-1, key);
     }
     public static void main(String[] args) {
-        System.out.println(isFound(new int[] {1, 2, 3}, 0, 3, 4));
+        System.out.println(isFound(new int[] {1, 2, 3}, 0, 3, 3));
     }
 }
